@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let iLength = lengthText // Количество нужных элементов
     let firstItems // Slice возвращает новый массив отсекая оставшиеся элементы, нам они еще нужны, получаем нужные элементы в отдельную переменную
     while (i < 6) {
-        firstItems = textArray.slice(iArray, iLength)
+        firstItems = textArray.slice(iArray, iLength) //При каждой итерации цикла диапазон нужных id в массиве смещается на lengthText
         iArray = iArray + lengthText
         iLength = iLength + lengthText
         iOfText[i].append(firstItems.join(' '))
